@@ -11,9 +11,23 @@ namespace Stack_Using_Linked_List
             info = i;
             next = n;
         }
-        static void Main(string[] args)
+    }
+
+    class Stacks
+    {
+        Node top;
+
+        public Stacks()
         {
-            Console.WriteLine("Hello World!");
+            top = null;
+        }
+
+        bool empty()
+        {
+            if (top == null)
+                return (true);
+            else
+                return (false);
         }
     }
 }
